@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -10,6 +10,7 @@
 <meta name="description" content="NanoMag KHU Homepage">
 <meta name="keywords" content="NanoMag, Physics, Kyung Hee">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nano-Magnetism Lab</title>
 
 <style>
@@ -117,6 +118,72 @@ section>#publicationList {
 #address {
 	font-family: Georgia;
 }
+
+/* Styles for ERIS Project Section */
+#introduction h2.eris-title {
+    color: #005599;
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-indent: 0;
+}
+
+#introduction h3.eris-section-title {
+    color: #000088;
+    font-size: 1.1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+    text-indent: 20px;
+}
+
+#introduction ul.eris-goals {
+    list-style-type: disc;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    color: #000066;
+}
+
+#introduction ul.eris-goals li {
+    line-height: 1.5em;
+}
+
+#introduction table.eris-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    color: #000066;
+}
+
+#introduction table.eris-table th,
+#introduction table.eris-table td {
+    border: 1px solid #a2a2ff;
+    padding: 0.5em;
+    text-align: left;
+}
+
+#introduction table.eris-table th {
+    background-color: #a2a2ff;
+    font-weight: bold;
+}
+
+#introduction ol.eris-objectives {
+    list-style-type: decimal;
+    margin-left: 2em;
+    color: #000066;
+}
+
+#introduction ol.eris-objectives li {
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    #introduction table.eris-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 </style>
 </head>
 
@@ -128,13 +195,13 @@ section>#publicationList {
 	<nav>
 		<ul id="address">
 			<li><a href="#members"><img src="members.jpg" width="120"
-					height="36"></a></li>
+					height="36" alt="Members"></a></li>
 			<li><a href="#publicationList"><img src="publication.jpg"
-					width="120" height="36"></a></li>
+					width="120" height="36" alt="Publications"></a></li>
 			<li><a href="http://phy.khu.ac.kr"><img src="Physics.jpg"
-					width="120" height="36"></a></li>
+					width="120" height="36" alt="Department of Physics, Kyung Hee University"></a></li>
 			<li><a href="http://www.khu.ac.kr"><img src="khu.jpg"
-					width="120" height="36"></a></li>
+					width="120" height="36" alt="Kyung Hee University"></a></li>
 		</ul>
 	</nav>
 
@@ -161,7 +228,85 @@ section>#publicationList {
 				groups at Physics Department, Fudan University in China and SPLEEM
 				group in LBNL, USA.<br />
 			</p>
-			<p>&nbsp;</p>
+
+			<hr>
+
+			<h2 class="eris-title">물리학과 학부연구생 6주 인턴쉽 프로그램</h2>
+
+			<table class="eris-table">
+				<thead>
+					<tr>
+						<th>회차</th>
+						<th>내용</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1-1</td>
+						<td>파이썬과 딥러닝을 위한 컴퓨터 환경설정</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1-2</td>
+						<td>파이썬 기초문법</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2-1</td>
+						<td>자성모델 파이썬으로 구현하기-1 (이징모델 이론)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2-2</td>
+						<td>자성모델 파이썬으로 구현하기-2 (몬테카를로 시뮬레이션)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3-1</td>
+						<td>딥러닝 기초 이론</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3-2</td>
+						<td>딥러닝 기초과정 실습 (심층신경망)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4-1</td>
+						<td>딥러닝 중급과정 실습-1 (오토인코더)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4-2</td>
+						<td>딥러닝 중급과정 실습-2 (변분 오토인코더)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5-1</td>
+						<td>직접 만든 데이터로 딥러닝 학습하기</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5-2</td>
+						<td>하이젠버그자성모델 전산모사 및 이론 (Antisymmetric exchange)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6-1</td>
+						<td>논문 따라하기 1<br> Interpolation and extrapolation between the
+							magnetic chiral states using autoencoder</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6-2</td>
+						<td>논문 따라하기 2<br> Indexing topological numbers on images by
+							transferring chiral magnetic textures</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
 		</article>
 		<article id="members">
 			<h2>Members</h2>
@@ -187,7 +332,6 @@ section>#publicationList {
 				
 
 			</ul>
-			<p>&nbsp;</p>
 		</article>
 		<article id="publicationList">
 			<h2>Publications</h2>
@@ -488,13 +632,79 @@ section>#publicationList {
 						et al., <strong class="journalTitle">JAP (2013)</strong>
 					</p></li>
 			</ul>
-			<p>&nbsp;</p>
+			<p> </p>
 		</article>
 	</section>
 
 	<footer> NanoMag Lab, Physics Department, Kyung Hee University
 		02-961-0248, cywon@khu.ac.kr </footer>
 
+    <script>
+        // Function to get the value from localStorage, or a default if it's not there
+        function getCount(key, defaultValue) {
+            let count = localStorage.getItem(key);
+            if (count === null) {
+                return defaultValue;
+            } else {
+                return parseInt(count);
+            }
+        }
 
+        // Function to set the value in localStorage
+        function setCount(key, value) {
+            localStorage.setItem(key, value);
+        }
+
+        // --- Daily Visitor Counter ---
+        let today = new Date().toLocaleDateString(); // Get today's date
+
+        // Get daily visitor count from localStorage
+        let dailyVisitors = getCount('dailyVisitors', 0);
+        let lastVisitDate = localStorage.getItem('lastVisitDate');
+
+        // If the last visit was not today, reset daily visitors
+        if (lastVisitDate !== today) {
+            dailyVisitors = 0;
+        }
+
+        // Increment daily visitors
+        dailyVisitors++;
+        setCount('dailyVisitors', dailyVisitors);
+
+        // Set last visit date to today
+        localStorage.setItem('lastVisitDate', today);
+
+        // --- Total Visitor Counter ---
+
+        // Get total visitor count from localStorage
+        let totalVisitors = getCount('totalVisitors', 0);
+
+        // Increment total visitors
+        totalVisitors++;
+        setCount('totalVisitors', totalVisitors);
+
+
+        // --- Display Counters ---
+        document.addEventListener('DOMContentLoaded', function() { // Wait for the document to load
+            // Display the counters in the footer (or wherever you want)
+            let footer = document.querySelector('footer');
+            if (footer) {
+                let counterDiv = document.createElement('div');
+                counterDiv.style.marginTop = '10px'; // Add some spacing
+
+                let dailyVisitorSpan = document.createElement('span');
+                dailyVisitorSpan.textContent = 'Today\'s Visitors: ' + dailyVisitors;
+                dailyVisitorSpan.style.marginRight = '20px'; // Space them out
+
+                let totalVisitorSpan = document.createElement('span');
+                totalVisitorSpan.textContent = 'Total Visitors: ' + totalVisitors;
+
+                counterDiv.appendChild(dailyVisitorSpan);
+                counterDiv.appendChild(totalVisitorSpan);
+
+                footer.appendChild(counterDiv);
+            }
+        });
+    </script>
 </body>
 </html>
